@@ -1,0 +1,123 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vw;
+}
+
+body {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+  }
+
+select {
+    width: 250px;
+    height: 50px;
+} 
+  
+
+.card {
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(192, 192, 192);
+    cursor: pointer;
+    align-items: center;
+    
+}
+
+#digiModal .modal-body img {
+    max-height: 300px; 
+  }
+
+.card > h5 {
+    font-size: 2rem;
+}
+
+.card > p {
+    font-size: 1rem;
+    font-style: italic;    
+} 
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+img {
+    width: 90%;
+}
+
+.navbar-banner {
+    background-image: 
+      linear-gradient(to right, rgba(0,0,0,0.9), transparent calc(25% + 1px)), 
+      linear-gradient(to left, rgba(0,0,0,0.9), transparent calc(25% + 1px)), 
+      url('https://images.withthewill.net/digimon_banner.jpg');
+    background-size: auto;
+    background-position: center center;
+  }
+
+  main {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d1fb5d94-c544-4cf6-ad1a-4721466e06a3/de4ew7c-612d0ecf-8699-4ca2-985a-1df2c3d65ce9.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2QxZmI1ZDk0LWM1NDQtNGNmNi1hZDFhLTQ3MjE0NjZlMDZhM1wvZGU0ZXc3Yy02MTJkMGVjZi04Njk5LTRjYTItOTg1YS0xZGYyYzNkNjVjZTkuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Wp0rO1E59xEGCl3TGuBxW_lmvqHLP1Zj_Fj7p1r9s7w");
+    background-size: contain;
+    background-position: center;
+  }
+  
+  .card:hover {
+    transform: rotateY(360deg);
+    transition: transform 0.9s ease-in-out;
+  }
+  
+
+ 
+  @keyframes shine {
+    0% {
+      font-size: 1em;
+      text-shadow: none;
+    }
+    50% {
+      font-size: 2.1em;
+      text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff, 0px 0px 10px #f38722, 0px 0px 15px #ff7d03;
+    }
+    100% {
+      font-size: 2.1em;
+      text-shadow: none;
+    }
+  }
+  .shine {
+    animation: shine 2s ease-in-out infinite;
+  }
+
+  .tilt {
+    animation: tilt 0.5s ease-in-out alternate infinite;
+  }
+  
+ /*  agrego algunas onditas */
+  @keyframes tilt {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes wave {
+    0% {
+      transform: skewX(0deg);
+    }
+    25% {
+      transform: skewX(-10deg);
+    }
+    50% {
+      transform: skewX(0deg);
+    }
+    75% {
+      transform: skewX(10deg);
+    }
+    100% {
+      transform: skewX(0deg);
+    }
+  }
+  
+  .wave {
+    animation: wave 0.7s infinite;
+  }
+
